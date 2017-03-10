@@ -1,0 +1,4 @@
+xxx
+dir *.* 
+------------------ 
+upd temp flist /// in xxx.txt 
