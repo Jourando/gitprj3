@@ -1,4 +1,15 @@
-xxx
-dir *.* 
------------------- 
-upd temp flist /// in xxx.txt 
+temp flist saved as
+		xxx.txt
+
+
+11.03.2017  02:46    <DIR>          .
+11.03.2017  02:46    <DIR>          ..
+11.03.2017  01:04               395 .gitattributes
+11.03.2017  01:04             5 187 .gitignore
+11.03.2017  02:14               387 descript.md
+11.03.2017  02:14                46 FLIST.txt
+11.03.2017  02:14                41 PLIST.txt
+11.03.2017  02:14                43 README.md
+11.03.2017  02:46                 0 xxx.txt
+               8 файлов          6 099 байт
+               2 папок  502 083 227 648 байт свободно
