@@ -65,3 +65,8 @@
 # Wait 10
 # SET *CurJS3 TO js3.part
 # INC *CurJS3
+- This time i set a HTML part
+- Later i'll set a JS instead of HTML
+- So this time js3.part is empty and html1.part is not empty. And when it will be ready, html1.part became empty and js3 will be not empty
+# SET *CurHTM1 TO xhtml1.part
+# INC *CurHTM1
