@@ -1,8 +1,3 @@
-# VI[name]: BuildScenario
-# VI[ver]: 2.0.1
-# VI[app]: Mbuild
-# VI[comp]: 3
-- Compatible with Mbuild 3 +
 ? Start new building
 # Wait 10
 ? Creating default HTML doc
@@ -94,7 +89,7 @@
 # INC *CurJS4
 # FW *CurF {
 </Script>
-<!-- //// -->
+<!-- // -->
 }
 - JS init script
 ? JS init part
