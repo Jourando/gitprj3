@@ -1,3 +1,4 @@
+// Массивы под категории
 var catItems = new Array();
 catItems[1] = new Array();
 catItems[2] = new Array();

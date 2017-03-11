@@ -1,17 +1,6 @@
-function changItem(bx, cx) {
-for (var i=1; i<cx; i++) {document.getElementById('e'+i).className='item1'}
-if (bx !== 0) {document.getElementById('e'+bx).className='item2';}
-}
-function changCont(dx, cx) {
-for (var i=1; i<cx; i++) {document.getElementById('cnt'+i).className='cont1'}
-if (dx !== 0) {
-	document.getElementById('cnt'+dx).className='cont2';
-	document.getElementById('cnt0').className='cont3';
-} else {
-	document.getElementById('cnt0').className='cont0';
-}
-}
-function showMe(ax) {
-changItem(ax, ItmCount+1);
-changCont(ax, ItmCount+1);
+function writeItm() {
+// This time i set a HTML part
+// Later i'll set a JS instead of HTML
+// So this time js3.part is empty and html1.part is not empty. And when it will be ready, html1.part became empty and js3 will be not empty
+return false;
 }

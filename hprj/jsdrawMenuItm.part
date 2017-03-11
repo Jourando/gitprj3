@@ -1,0 +1,38 @@
+function fillMenu() {
+for (var i=1; i<ItmCount+1; i++) {document.getElementById('e'+i).innerHTML=menuItems[i-1];}
+}
+function drawItem(ax, bx) {
+pl='cat'+ax+'itm'+bx;
+itmCont1=itmCont2=itmCont3='';
+// allItems[0][0]=['ItemName 0', 'description 1', 'cost 2', 'time 3', 'link 4', 'itemName class 5', 'description class 6', 'cost and time class 7', 'link class 8', 0];
+// last value = type of item separation
+if (catItems[ax][bx][5]=='') {itmCont1='<p class=defaultName>'+catItems[ax][bx][0]+'</p>';}
+else {itmCont1='<span class='+catItems[ax][bx][5]+'>'+catItems[ax][bx][0]+'</span>';}
+if (catItems[ax][bx][1]=='') { itmCont2=''; } // description
+else {
+	if (catItems[ax][bx][6]=='') {itmCont2='<br><p class=defaultDescr>'+catItems[ax][bx][1]+'</p>'}
+	else {itmCont2='<br><p class='+catItems[ax][bx][6]+'>'+catItems[ax][bx][1]+'</p>'}
+}
+if (catItems[ax][bx][2]=='') { itmCont3=''; } // cost
+else {
+	if (catItems[ax][bx][7]=='') {itmCont3='<p class=defaultCost>'+catItems[ax][bx][2]+'</p>'}
+	else {itmCont3='<p class='+catItems[ax][bx][7]+'>'+catItems[ax][bx][2]+'</p>'}
+}
+if (catItems[ax][bx][3]=='') { itmCont3=itmCont3; } // time
+else {
+	if (catItems[ax][bx][7]=='') {itmCont3=itmCont3+'<p class=defaultCost>'+catItems[ax][bx][3]+'</p>'}
+	else {itmCont3=itmCont3+'<p class='+catItems[ax][bx][7]+'>'+catItems[ax][bx][3]+'</p>'}
+}
+if (catItems[ax][bx][4]=='') { itmCont3=itmCont3; } // link
+else {
+	if (catItems[ax][bx][8]=='') {itmCont3=itmCont3+'<p class=defaultCost>'+catItems[ax][bx][4]+'</p>'}
+	else {itmCont3=itmCont3+'<p class='+catItems[ax][bx][8]+'>'+catItems[ax][bx][4]+'</p>'}
+}
+if ((itmCont3 == '') || (itmCont3 == ' ')) { itmCont3 = ''; }
+else {itmCont3='<br>'+itmCont3;}
+// *
+console.log('itmCont1: '+itmCont1);
+console.log('itmCont2: '+itmCont2);
+console.log('itmCont3: '+itmCont3);
+document.getElementById(pl).innerHTML=itmCont1+itmCont2+itmCont3;
+}

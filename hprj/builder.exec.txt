@@ -30,7 +30,7 @@
 <Script>
 }
 ? Inserting JS functions to switch menu and items
-# SET *CurJS2 TO js2.part
+# SET *CurJS2 TO jsChangItmCont.part
 # INS *CurJS2
 ? Ending HEAD section
 # FW *CurF {
@@ -80,11 +80,22 @@
 ? Now adding some scripts
 - fillMenu function
 ? JS to fill menu when you're loading it for the 1st time
-- drawItem
+- drawItem function
 ? JS to draw items
 # FW *CurF {
 <Script>
 }
+# SET *CurJS4 TO jsdrawMenuItm.part
+# INC *CurJS4
 # FW *CurF {
 </Script>
+<!-- //// -->
 }
+- JS init script
+? JS init part
+# WAIT 10
+# FW *CurF {
+<Script>
+}
+# SET *CurJS5 TO js5.part
+# INC *CurJS5
