@@ -78,16 +78,13 @@
 ? End of main part
 # WAIT 10
 ? Now adding some scripts
-report                   
-
-
-
-
-
-
-
-
-
-
-
-///////////
+- fillMenu function
+? JS to fill menu when you're loading it for the 1st time
+- drawItem
+? JS to draw items
+# FW *CurF {
+<Script>
+}
+# FW *CurF {
+</Script>
+}
