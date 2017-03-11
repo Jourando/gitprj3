@@ -8,10 +8,10 @@
 <HTML>
 <HEAD>
 }
+? Inserting Title and Meta
 # SET *MetaInc TO meta.part
 # INC *MetaInc
 # FW *CurF {
-<!-- Style section -->
 <Style>
 }
 ? Inserting CSS
