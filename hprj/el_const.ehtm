@@ -65,5 +65,22 @@ document.getElementById('curDate').style.fontWeight='bold';
 </BODY>
 </HTML>
 	]
+	END CODEBASE
 	}
-	
+// End of Header
+
+// Main menu
+El.3 {
+	Color: #FFF
+	Font: 16pt, Open Sans Condenced
+	Border:
+	Radius: 10px
+	Background: #591E58
+}
+El.3:Selected {
+	Background: #950032
+}
+El.3:hover {
+	Background: #950032
+}
+// End of menu
