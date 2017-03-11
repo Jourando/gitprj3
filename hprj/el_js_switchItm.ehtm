@@ -1,0 +1,48 @@
+function changItem(bx, cx) {
+for (var i=1; i<cx; i++) {document.getElementById('e'+i).className='item1'}
+if (bx !== 0) {document.getElementById('e'+bx).className='item2';}
+}
+function changCont(dx, cx) {
+for (var i=1; i<cx; i++) {document.getElementById('cnt'+i).className='cont1'}
+if (dx !== 0) {
+	document.getElementById('cnt'+dx).className='cont2';
+	document.getElementById('cnt0').className='cont3';
+} else {
+	document.getElementById('cnt0').className='cont0';
+}
+}
+function showMe(ax) {
+changItem(ax, ItmCount+1);
+changCont(ax, ItmCount+1);
+}
+
+// вызов происходит из showMe (номер)
+
+// запуск changItem с параметрами ах (передается из вне) и ItmCount - устанавливается там же, где и список айтемов с их значениями
+// все айтемы циклом сбрасываются на дефолт
+// знач. ах передается в changItem как bx, если ax=0 то всё сбрасывается, всем элементам устанавливается дефолтный класс item1,
+// если же значение ax>0, то для этого элемента (id='e'+ax) устанавливается класс item2
+
+// запуск changCont c параметрами ax (передается из вне) и ItmCount - устанавливается там же, где и список айтемов с их значениями
+// контент айтемов циклом сбрасывается на дефолт
+// значение ах передается в changCont как dx
+// затем элемент с id='cnt'+ax получает класс cont2, а элемент с id='cont0' получает класс 'cont3'
+
+// класс cont0:
+// .cont0 {padding: 20px; margin-left: 10px; border: 0px; background: #ceceff; color: navy; display: block;}
+// используется для дефолтного описания при открытии страницы
+
+// класс cont1:
+// .cont1 {display: none;}
+// используется для скрытия в цикле
+
+// класс cont2:
+// .cont2 {padding: 20px; margin-left: 10px; border: 1px dotted #000; color: navy; display: block;}
+// используется для основного отображения айтемов
+
+// класс cont3:
+// .cont3 {padding: 20px; margin-left: 10px; border: 0px; display: none;}
+// используется для манипуляций с дефолтным контекстом (дескрипшном категорий)
+
+// li используется для формирования айтемов на уровне верстки
+// р - для формирования дефолтных описаний над айтемами
