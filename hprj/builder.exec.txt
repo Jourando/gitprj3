@@ -99,3 +99,17 @@
 }
 # SET *CurJS5 TO js5.part
 # INC *CurJS5
+# FW *CurF {
+</Script>
+}
+? Adding footer
+# SET *FooterHTM TO footerhtm.part
+# INC *FooterHTM
+# FW *CurF {
+</BODY>
+</HTML>
+}
+? End working, relax
+# WAIT 10
+# PAUSE
+# EXIT 0

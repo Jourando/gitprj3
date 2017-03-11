@@ -1,0 +1,10 @@
+for (itmXm=1; itmXm<9; itmXm++) drawItem(1, itmXm);
+for (itmXm=1; itmXm<18; itmXm++) drawItem(2, itmXm);
+for (itmXm=1; itmXm<14; itmXm++) drawItem(3, itmXm);
+for (itmXm=1; itmXm<13; itmXm++) drawItem(4, itmXm);
+for (itmXm=1; itmXm<13; itmXm++) drawItem(5, itmXm);
+showMe(0);
+fillMenu();
+// newH = document.body.clientHeight - 75;
+// document.getElementById('Blr').style.height=newH+'px';
+document.getElementById('Blr').style.height=document.getElementById('Bll').clientHeight+'px';
