@@ -56,3 +56,4 @@
 <div class=blockRight id=Blr>
 }
 ? Right section was added
+# SET *GlobMess TO initTextRS.part

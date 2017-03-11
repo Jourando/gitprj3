@@ -1,0 +1,21 @@
+Body {margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px;}
+.globDiv {width: 99%; border: 0px; margin: 20px auto; vertical-align: top; display: block;}
+.blockLeft {display: block; width: 24em; margin-right: 10px; padding: 0px; float: left}
+.blockMiddle {display: block; width: 3em; float: left}
+.blockRight {display: block; width: 30em; margin-left: 10px; padding: 0px; overflow-y: scroll; background: #ceceff; float: left;}
+.item1 {border: 1px solid darkred; background: #fcbe7f; width: 100%; padding: 10px; color: brown; cursor: pointer}
+.item1:hover {border: 1px solid brown; background: #A00; width: 100%; padding: 10px; color: #FFF47F; cursor: pointer}
+.item2 {border: 1px solid red;  background: brown; width: 100%; padding: 10px; color: snow; cursor: pointer}
+.item1 span, .item2 span {font-weight: bold; font-family: Helvetica; font-size: 12pt}
+.cont0 {padding: 20px; margin-left: 10px; border: 0px; background: #ceceff; color: navy; display: block;}
+.cont1 {padding: 20px; margin-left: 10px; display: none;}
+.cont2 {padding: 20px; margin-left: 10px; border: 1px dotted #000; color: navy; display: block;}
+.cont3 {padding: 20px; margin-left: 10px; border: 0px; display: none;}
+li {display: block; border: 1px dotted navy; border-radius: 10% 20%; padding: 5px 5px 5px 110px; height: 100px; margin: 5px; font-weight: normal; font-size: 12pt; font-family: Verdana; background: Url('https://static.wixstatic.com/media/e8c495_d757c64bbf954a9ba0396f78848cb0df~mv2.png/v1/fill/w_70,h_70,al_c/e8c495_d757c64bbf954a9ba0396f78848cb0df~mv2.png') left no-repeat #EEE;}
+span.defaultName {display: inline-block; border: 0px; font-weight: 900; margin-top: 30px; margin-left: 20px;}
+p {text-align: justify;}
+p.defaultDescr {display: inline-block; margin: 5px;}
+p.defaultCost {display: inline-block; background: #CCC; border: 1px dashed #333; margin: 5px; padding: 1px;}
+p.red {display: inline-block; color: #f00; text-decoration: underline;}
+p.blue {display: inline-block; border: 0px; margin-left: 50px; padding: 1px; color: #00f; text-decoration: underline;}
+p.c {text-align: center}
