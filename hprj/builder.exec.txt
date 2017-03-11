@@ -40,3 +40,19 @@
 <div class=globDiv id=glDiv>
 }
 ? Global section was created
+# FW *CurF {
+<div class=blockLeft id=Bll>
+}
+? Left section was created
+# SET *MenuJS TO jsmenu.part
+? Left menu was added to Left section
+# FW *CurF {
+</div>
+<div class=blockMiddle>&nbsp;</div>
+}
+? Middle section was added
+? Middle section is empty
+#FW *CurF {
+<div class=blockRight id=Blr>
+}
+? Right section was added
