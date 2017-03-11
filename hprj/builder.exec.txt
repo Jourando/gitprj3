@@ -7,8 +7,11 @@
 # FW *CurF {
 <HTML>
 <HEAD>
-<TITLE>Order</TITLE>
-<meta charset="utf-8"/><lang="RU-ru"/>
+}
+# SET *MetaInc TO meta.part
+# INC *MetaInc
+# FW *CurF {
+<!-- Style section -->
 <Style>
 }
 ? Inserting CSS
@@ -45,6 +48,7 @@
 }
 ? Left section was created
 # SET *MenuJS TO jsmenu.part
+# INC *MenuJS
 ? Left menu was added to Left section
 # FW *CurF {
 </div>
@@ -52,8 +56,12 @@
 }
 ? Middle section was added
 ? Middle section is empty
-#FW *CurF {
+# FW *CurF {
 <div class=blockRight id=Blr>
 }
 ? Right section was added
 # SET *GlobMess TO initTextRS.part
+# INC *GlobMess
+# Wait 10
+# SET *CurJS3 TO js3.part
+# INC *CurJS3
