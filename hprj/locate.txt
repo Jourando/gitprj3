@@ -1,0 +1,4 @@
+main: hprj branch
+old_html_build: old_build
+html_parts: *
+pas_parts: pas_build
