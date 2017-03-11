@@ -1,3 +1,8 @@
+# VI[name]: BuildScenario
+# VI[ver]: 2.0
+# VI[app]: Mbuild
+# VI[comp]: 3
+- Compatible with Mbuild 3 +
 ? Start new building
 # Wait 10
 ? Creating default HTML doc
