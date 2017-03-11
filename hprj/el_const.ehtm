@@ -1,2 +1,21 @@
 <!-- list of elements -->
 First page // main // http://www.cheharda.org/
+
+// Раздел: Хедер
+El.1{				// Кнопки Телефон+Адрес
+					//        Спецпредложение
+	Name: PhoneButton, SpecOffer
+	Color: #FCBE7F
+	Font: 16pt, Open Sans Condenced
+	Background: alpha 100%, #68B04D
+	Border: width 3px, alpha 100%, #E21C21
+	Radius: 5 5 5 5
+	}
+El.1:hover {		// Кнопки с наведенной мышью
+	Color: #88050A
+	Background: #FFF
+	Border: width 3px, alpha 100%, #88050A
+	}
+El.2 {				// Таймер
+
+	}
