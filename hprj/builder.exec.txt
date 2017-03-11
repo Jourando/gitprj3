@@ -1,0 +1,42 @@
+? Start new building
+# Wait 10
+? Creating default HTML doc
+# MD xbuild
+# MF temp.html
+# SET *CurF TO xbuidl\temp.html
+# FW *CurF {
+<HTML>
+<HEAD>
+<TITLE>Order</TITLE>
+<meta charset="utf-8"/><lang="RU-ru"/>
+<Style>
+}
+? Inserting CSS
+# SET *StyleF TO css.part
+# INC *StyleF
+# FW *CurF {
+</Style>
+<Script>
+}
+? Inserting init JS
+# SET *CurJS1 TO js1.part
+# INC *CurJS1
+# FW *CurF {
+</Script>
+<!-- functions to show menu and items -->
+<Script>
+}
+? Inserting JS functions to switch menu and items
+# SET *CurJS2 TO js2.part
+# INS *CurJS2
+? Ending HEAD section
+# FW *CurF {
+</Script>
+</HEAD>
+<BODY>
+}
+? Opening BODY section
+# FW *CurF {
+<div class=globDiv id=glDiv>
+}
+? Global section was created
