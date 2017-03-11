@@ -1,0 +1,189 @@
+	<div class=cont1 id=cnt1><!-- 1-3 -->
+	<p><b>Примечание.</b> Расчет на 1 час, цена 3 500 р. Один аниматор. Работа с группами более чем десяти детей  оговаривается отдельно.</p>
+	<ul>
+	<li id=cat1itm1> </li>
+	<li id=cat1itm2> </li>
+	<li id=cat1itm3> </li>
+	<li id=cat1itm4> </li>
+	<li id=cat1itm5> </li>
+	<li id=cat1itm6> </li>
+	<li id=cat1itm7> </li>
+	</ul>
+	<hr width=75% color=brown>
+	<ul>
+	<li id=cat1itm8> </li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt2><!-- 4-7 -->
+	<ul>
+	<li id=cat2itm1> </li>
+	<li id=cat2itm2> </li>
+	<li id=cat2itm3> </li>
+	<li id=cat2itm4> </li>
+	<li id=cat2itm5> </li>
+	<li id=cat2itm6> </li>
+	<li id=cat2itm7> </li>
+	<li id=cat2itm8> </li>
+	<li id=cat2itm9> </li>
+	<li id=cat2itm10> </li>
+	<li id=cat2itm11> </li>
+	<li id=cat2itm12> </li>
+	<li id=cat2itm13> </li>
+	<li id=cat2itm14> </li>
+	<li id=cat2itm15> </li>
+	<li id=cat2itm16> </li>
+	<li id=cat2itm17> </li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt3><!-- 7-16 -->
+	<ul>
+	<li id=cat3itm1> </li>
+	<li id=cat3itm2> </li>
+	<li id=cat3itm3> </li>
+	<li id=cat3itm4> </li>
+	<li id=cat3itm5> </li>
+	<li id=cat3itm6> </li>
+	<li id=cat3itm7> </li>
+	<li id=cat3itm8> </li>
+	<li id=cat3itm9> </li>
+	<li id=cat3itm10> </li>
+	<li id=cat3itm11> </li>
+	<li id=cat3itm12> </li>
+	<li id=cat3itm13> </li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt4><!-- 4.	Шоу программы для детей -->
+	<ul>
+	<li id=cat4itm1> </li>
+	<li id=cat4itm2> </li>
+	<li id=cat4itm3> </li>
+	<li id=cat4itm4> </li>
+	<li id=cat4itm5> </li>
+	<li id=cat4itm6> </li>
+	<li id=cat4itm7> </li>
+	<li id=cat4itm8> </li>
+	<li id=cat4itm9> </li>
+	<li id=cat4itm10> </li>
+	<li id=cat4itm11> </li>
+	<li id=cat4itm12> </li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt5><!-- Мастер-классы -->
+	<p><b>Примечание.</b> Большая часть мастер-классов рассчитана на группы до 10 детей. Заявки на мастер-классы для групп менее 5 или более 10 детей рассматриваются индивидуально.</p>
+	<ul>
+	<li id=cat5itm1> </li>
+	<li id=cat5itm2> </li>
+	<li id=cat5itm3> </li>
+	<li id=cat5itm4> </li>
+	<li id=cat5itm5> </li>
+	<li id=cat5itm6> </li>
+	<li id=cat5itm7> </li>
+	<li id=cat5itm8> </li>
+	<li id=cat5itm9> </li>
+	<li id=cat5itm10> </li>
+	<li id=cat5itm11> </li>
+	<li id=cat5itm12> </li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt6><!-- Выпускные -->
+	<ul>
+	<li id=cat6itm1>Выпускной детский сад</li>
+	<li id=cat6itm2>Выпускной 4 класс</li>
+	<li id=cat6itm3>Выпускной 9 класс</li>
+	<li id=cat6itm4>Выпускной 11 класс</li>
+	<li id=cat6itm5>Окончание ВУЗа</li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt7><!-- Тематические программы с интерактивом -->
+	<p><b>Примечание.</b> Цены на тематические программы обсуждаются в индивидуальном порядке. Средняя цена за шоу + интерактив - от 15 тысяч за час работы двух 
+
+актеров.</p>
+	<ul>
+	<li id=cat7itm1>Шоу самураев</li>
+	<li id=cat7itm2>Чайная церемония</li>
+	<li id=cat7itm3>Средневековая Япония</li>
+	<li id=cat7itm4>Русь изначальная</li>
+	<li id=cat7itm5>Викинги и славяне</li>
+	<li id=cat7itm6>Шотландия - По следам Дункана Маклауда</li>
+	<li id=cat7itm7>Кельты и Римляне</li>
+	<li id=cat7itm8>Рыцарские забавы</li>
+	<li id=cat7itm9>Праздники средневековой Европы</li>
+	<li id=cat7itm10>Бал-маскарад (19 век)</li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt8><!-- Молодежка -->
+	<p><b>Примечание.</b> Обсуждается индивидуально, по желанию заказчика длительность варьируется.</p>
+	<ul>
+	<li id=cat8itm1>Проводы в армию – от 2 часов, цена договорная</li>
+	<li id=cat8itm2>Дембель – от 2 часов, цена договорная</li>
+	<li id=cat8itm3>Поступление в вуз – от 2 часов, цена договорная</li>
+	<li id=cat8itm4>Vip – программа – от 2 часов, цена договорная</li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt9><!-- Шоу-программы для взрослых -->
+	<ul>
+	<li id=cat9itm1>Крио шоу – 20-30 мин, цена от 10 000 р.</li>
+	<li id=cat9itm2>Неоновое шоу – 20-30 мин, цена от 8 000 р.</li>
+	<li id=cat9itm3>Мыльное шоу – 20-30 мин, цена от 6 000 р.</li>
+	<li id=cat9itm4>Тесла шоу – 20-30 мин, цена от 8 000 р.</li>
+	<li id=cat9itm5>Бумажная дискотека на свадьбу или корпоратив – 40 мин, от 20 000 р</li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt10><!-- Семейные торжества -->
+	<ul>
+	<li id=cat10itm1>Романтическое предложения</li>
+	<li id=cat10itm2>Сватовство</li>
+	<li id=cat10itm3>Помолвка</li>
+	<li id=cat10itm4>Венчание</li>
+	<li id=cat10itm5>Юбилей свадьбы</li>
+	<li id=cat10itm6>Юбилей (День рождения)</li>
+	<li id=cat10itm7>Именины (День Ангела)</li>
+	<li id=cat10itm8>Встреча из роддома</li>
+	<li id=cat10itm9>Крестины</li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt11><!-- Свадьбы -->
+	<ul>
+	<li>Свадьба «под ключ» - от 40 000 р.</li>
+	<li>Тематические свадьбы – от 50 000 р.</li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt12><!-- Корпоративы -->
+	<p><b>Примечание.</b> От часа работы, цена договорная.</p>
+	<ul>
+	<li>Корпоратив</li>
+	<li>Новогодний огонёк</li>
+	<li>Юбилей компании / филиала</li>
+	<li>День Рождения руководителя</li>
+	<li>День Рождения коллеги</li>
+	<li>Тимбилдинг</li>
+	<li>Творческий вечер</li>
+	<li>Фотосессия</li>
+	<li>Лазертаг</li>
+	<li>Презентация</li>
+	<li>Vip-программа</li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt13><!-- Праздники: государственные, народные -->
+	<ul>
+	<li>Праздники официальные</li>
+	<li>Праздники народные</li>
+	<li>Праздники религиозные</li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt14><!-- Доп.услуги -->
+	<ul>
+	<li>Видеоуслуги – 1 час, от 4 000 р.</li>
+	<li>Фотоуслуги – 1 час, от 4 000 р.</li>
+	<li>Украшения шарами – от 7 000 р.</li>
+	<li>Кейтеринг – цена договорная</li>
+	<li>Шоколадный фонтан – цена договорная</li>
+	<li>Шар – сюрприз, пиньята – от 3 000 р.</li>
+	<li>Печатная продукция – цена договорная</li>
+	<li>Аквагрим – 1 час, цена - 3 000 р.</li>
+	</ul>
+	<hr width=75% color=brown>
+	<ul>
+	<li>Памятные сувениры – цена договорная</li>
+	</ul>
+	</div>
