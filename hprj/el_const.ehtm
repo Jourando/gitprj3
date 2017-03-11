@@ -17,5 +17,53 @@ El.1:hover {		// Кнопки с наведенной мышью
 	Border: width 3px, alpha 100%, #88050A
 	}
 El.2 {				// Таймер
-
+					// Main ID: curDate
+					// In-line CSS: font-weight: bold;
+					// JS CSS: document.getElementById('curDate').style.fontWeight='bold';
+	Size: width 98%, height: 80%
+	Color: #FCBE7F
+	TextAlign: center
+	Background: #68B04D
+	Font:
+	Border: 3px solid #E21C21
+	Radius: 5px
+	Margin: 0
+	Padding: 0
+	
+	CODEBASE [
+<HTML>
+<HEAD>
+<TITLE>Checharda.clock</TITLE>
+<STYLE>
+body {background: #68B04D; color: #fcbe7f; border-radius: 5px; border: 3px solid #E21C21; width: 98%; height: 80%; margin: 0; padding: 0;}
+#curDate {text-align: center}
+</STYLE>
+</HEAD><BODY>
+<div id=curDate>today</div>
+<script>
+dayarray=new Array("воскресенье","понедельник","вторник","среда","четверг","пятница","суббота");
+montharray=new Array ("января","февраля","марта","апреля","мая","июня","июля","августа","сентября", "октября","ноября","декабря");
+var min;
+var sec;
+setInterval(function(){
+ndata=new Date();
+day=dayarray[ndata.getDay()];
+month=montharray[ndata.getMonth()];
+date=ndata.getDate();
+year=ndata.getFullYear();
+hours = ndata.getHours();
+mins = ndata.getMinutes();
+secs = ndata.getSeconds();
+if (mins < 10) {min='0'+mins} else {min=''+mins}
+if (secs < 10) {sec='0'+secs} else {sec=''+secs}
+datastr=(+ date +" "+ month +" "+ year +" года, "+ day);
+var format = hours+':'+min+':'+sec;
+document.getElementById('curDate').innerHTML = datastr + ', ' +format;
+}, 900);
+document.getElementById('curDate').style.fontWeight='bold';
+</script>
+</BODY>
+</HTML>
+	]
 	}
+	
