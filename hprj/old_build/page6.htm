@@ -1,0 +1,390 @@
+<HTML>
+<HEAD>
+<TITLE>Order</TITLE>
+<meta charset="utf-8"/>
+<Style>
+Body {margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px;}
+.globDiv {width: 99%; border: 0px; margin: 20px auto; vertical-align: top; display: block;}
+.blockLeft {display: block; width: 24em; margin-right: 10px; padding: 0px; float: left}
+.blockMiddle {display: block; width: 3em; float: left}
+.blockRight {display: block; width: 30em; margin-left: 10px; padding: 0px; overflow-y: scroll; background: #ceceff; float: left;}
+.item1 {border: 1px solid darkred; background: #fcbe7f; width: 100%; padding: 10px; color: brown; cursor: pointer}
+.item1:hover {border: 1px solid brown; background: #A00; width: 100%; padding: 10px; color: #FFF47F; cursor: pointer}
+.item2 {border: 1px solid red;  background: brown; width: 100%; padding: 10px; color: snow; cursor: pointer}
+.item1 span, .item2 span {font-weight: bold; font-family: Helvetica; font-size: 12pt}
+.cont0 {padding: 20px; margin-left: 10px; border: 0px; background: #ceceff; color: navy; display: block;}
+.cont1 {padding: 20px; margin-left: 10px; display: none;}
+.cont2 {padding: 20px; margin-left: 10px; border: 1px dotted #000; color: navy; display: block;}
+.cont3 {padding: 20px; margin-left: 10px; border: 0px; display: none;}
+li {display: block; border: 1px dotted navy; border-radius: 10% 20%; padding: 5px 5px 5px 110px; height: 100px; margin: 5px; font-weight: normal; font-size: 12pt; font-family: Verdana; background: Url('https://static.wixstatic.com/media/e8c495_d757c64bbf954a9ba0396f78848cb0df~mv2.png/v1/fill/w_70,h_70,al_c/e8c495_d757c64bbf954a9ba0396f78848cb0df~mv2.png') left no-repeat #EEE;}
+span.defaultName {display: inline-block; border: 0px; font-weight: 900; margin-top: 30px; margin-left: 20px;}
+p {text-align: justify;}
+p.defaultDescr {display: inline-block; margin: 5px;}
+p.defaultCost {display: inline-block; background: #CCC; border: 1px dashed #333; margin: 5px; padding: 1px;}
+p.red {display: inline-block; color: #f00; text-decoration: underline;}
+p.blue {display: inline-block; border: 0px; margin-left: 50px; padding: 1px; color: #00f; text-decoration: underline;}
+p.c {text-align: center}
+</Style>
+<Script>
+var splitters = ['<hr width=75% color=brown>', '<hr>'];
+var menuItems = ['<span>Анимационные программы для детей от 1 года до 3 лет</span>', '<span>Анимационные программы для детей от  4 лет до 7 лет</span>', '<span>Анимационные программы для детей от 7 до 16 лет</span>', '<span>Шоу программы для детей</span>', '<span>Мастер-классы</span>', '<span>Выпускные</span>', '<span>Тематические программы с интерактивом</span>', '<span>Молодежные программы</span>', '<span>Шоу программы для взрослых</span>', '<span>Семейные торжества</span>', '<span>Свадьбы</span>', '<span>Корпоративные торжества</span>', '<span>Праздники (государственные и народные)</span>', '<span>Дополнения</span>'];
+var catItems = new Array();
+catItems[1] = new Array();
+catItems[2] = new Array();
+catItems[3] = new Array();
+catItems[4] = new Array();
+catItems[5] = new Array();
+// allItems[0][0]=['ItemName 1', 'description 2', 'cost 3', 'time 4', 'link 5', 'itemName class 6', 'description class 7', 'cost and time class 8', 'link class 9'];
+catItems[1][1] = ['Фиксики', '', '', '', ' подробнее...', 'defaultName', '', 'defaultCost', 'blue'];
+catItems[1][2] = ['Лунтик', 'описание', 'цена', 'время', 'ссылка', '', '', '', 'red'];
+catItems[1][3] = ['Пчелка Майя', 'описание', 'цена', 'время', '', '', '', 'defaultCost', 'red'];
+catItems[1][4] = ['Русалочка и Тритон', 'описание', 'цена', 'время', '', '', '', '', 'red'];
+catItems[1][5] = ['Щенячий патруль', 'описание', 'цена', 'время', 'ссылка', '', '', '', 'red'];
+catItems[1][6] = ['Маша и Медведь', 'описание', 'цена', 'время', '', '', '', '', 'red'];
+catItems[1][7] = ['Робокары', 'описание', 'цена', 'время', '', '', '', '', 'red'];
+catItems[1][8] = ['Кукольный спектакль', '...', 'цена: 6000 р', 'время: 30 мин', '', '', '', '', 'red'];
+catItems[2][1] = ['Алиса в Стране чудес', '...', '', '', '', 'defaultName', '', 'defaultCost', 'red'];
+catItems[2][2] = ['В доме у Барбоскиных', '', '', '', '', 'defaultName', '', 'defaultCost', 'red'];
+catItems[2][3] = ['Белоснежка', '...', '', '', '', 'defaultName', '', '', 'red'];
+catItems[2][4] = ['Леди Баг и Суперкот', '', '', '', '', 'defaultName', '', '', 'red'];
+catItems[2][5] = ['Золушка', '', '', '', '', 'defaultName', '', '', 'red'];
+catItems[2][6] = ['Приключения Алладина и Жасмин', '', '', '', '', '', '', '', 'red'];
+catItems[2][7] = ['Феи Клуба Винкс', '', '', '', '', '', '', '', 'red'];
+catItems[2][8] = ['Радужные пони', '', '', '', '', 'defaultName', '', '', 'red'];
+catItems[2][9] = ['Тролли', '', '', '', '', '', '', '', 'red'];
+catItems[2][10] = ['Трансформеры', '', '', '', '', 'defaultName', '', '', 'red'];
+catItems[2][11] = ['Супергерои', '', '', '', '', '', '', 'defaultCost', 'red'];
+catItems[2][12] = ['Герои русских сказак – Баба яга', '', '', '', '', 'defaultName', '', '', 'red'];
+catItems[2][13] = ['Пикачу и все-все-все', '', '', '', '', 'defaultName', '', '', 'red'];
+catItems[2][14] = ['Покемоны', '', '', '', '', 'defaultName', '', '', 'red'];
+catItems[2][15] = ['Посвещение в Рыцари и Прекрасные Дамы…', '', '', '', '', '', '', '', 'red'];
+catItems[2][16] = ['Как построить вигвам. Программа с индейцами', '...', 'цена', 'время', '', 'defaultName', '', '', 'red'];
+catItems[2][17] = ['Секрет Самураев', '', '', '', '', '', '', '', 'red'];
+catItems[3][1] = ['Мафия / Настольные игры', '', '', '', '', '', '', '', 'red'];
+catItems[3][2] = ['Школа Магии', '', '', '', '', '', '', '', 'red'];
+catItems[3][3] = ['Шпионский квест', '', '', '', '', '', '', '', 'red'];
+catItems[3][4] = ['Школа монстров', '', '', '', '', '', '', '', 'red'];
+catItems[3][5] = ['Гарри Поттер и кубок огня', '', '', '', '', '', '', '', 'red'];
+catItems[3][6] = ['Форд Баярд', '', '', '', '', '', '', '', 'red'];
+catItems[3][7] = ['Мы в армии', '', '', '', '', '', '', '', 'red'];
+catItems[3][8] = ['МС-вечеринка', '', '', '', '', '', '', '', 'red'];
+catItems[3][9] = ['Зомби-пати', '', '', '', '', '', '', '', 'red'];
+catItems[3][10] = ['Гангстеры', '', '', '', '', '', '', '', 'red'];
+catItems[3][11] = ['Ковбои', '', '', '', '', '', '', '', 'red'];
+catItems[3][12] = ['Как стать звездой', '', '', '', '', '', '', '', 'red'];
+catItems[3][13] = ['Танцевальные баттлы', '', '', '', '', 'defaultName', '', 'defaultCost', 'red'];
+catItems[4][1] = ['Шоу мыльных пузырей', '...', 'цена: от 6000 р.', 'от 20-30 мин', '', 'defaultName', '', 'defaultCost', 'red'];
+catItems[4][2] = ['Неоновое шоу мыльных пузырей', '...', 'цена: от 8500 р.',  '30-40 мин', '', '', '', '', 'red'];
+catItems[4][3] = ['Бумажное шоу', '...', 'цена: от 12000 р.', '30 мин', '', '', '', '', 'red'];
+catItems[4][4] = ['Химическое шоу с сухим льдом', '...', 'цена: от 5500 р', '30 мин', '', '', '', '', 'red'];
+catItems[4][5] = ['Химическое шоу с жидким азотом и сухим льдом', '...', 'цена: от 7000 р.', '1 час', '', '', '', '', 'red'];
+catItems[4][6] = ['Криошоу с азотным мороженным', '...', 'цена: от 9000 р.', '1 час', '', '', '', '', 'red'];
+catItems[4][7] = ['Песочное шоу', '...', 'цена: от 8000 р.', '30 мин.', '', '', '', '', 'red'];
+catItems[4][8] = ['Контактный зоопарк', '...', 'цена: от 10.000 р.', '30-50 мин', '', '', '', '', 'red'];
+catItems[4][9] = ['Фокусники и Маги', '', 'цена: от 6000 р.', '30 мин', '', '', '', '', 'red'];
+catItems[4][10] = ['Фаейр-шоу', '', 'цена: от 17.000 р.', 'от 10 до 20 мин', '', '', '', '', 'red'];
+catItems[4][11] = ['Пенное шоу', '', 'цена: от 10.000 р.', '30 мин', '', '', '', '', 'red'];
+catItems[4][12] = ['Тесла-шоу', '', 'цена: от 6000 р', '20-30 мин', '', '', '', '', 'red'];
+catItems[5][1] = ['Кулинарный мастер-класс', '...', 'цена договорная', 'от 1 часа до 2 часов', '', '', '', '', 'red'];
+catItems[5][2] = ['Гончарное ремесло', '...', 'от 15.000 р', 'от 1 часа до 2 часов', '', '', '', '', ''];
+catItems[5][3] = ['Кузнечное ремесло', '...', 'от15.000 р', 'от 1 часа до 2 часов', '', '', '', '', ''];
+catItems[5][4] = ['Мыловарение', '...', 'от 500 р на ребенка', '1 час', '', '', '', '', 'red'];
+catItems[5][5] = ['Искусство Икебаны', '...', 'от 500 р на ребенка', '1 час', '', '', '', '', 'red'];
+catItems[5][6] = ['Парфюмерия – изготовление духов', '...', 'от 700 р на ребенка', '1 час', '', '', '', '', 'red'];
+catItems[5][7] = ['Искусство составления букетов', '...', 'от 500 р на ребенка', '1 час', '', '', '', '', 'red'];
+catItems[5][8] = ['Мастер-класс по каллиграфии', '...', 'от 500 р на ребенка', '1 час', '', '', '', '', 'red'];
+catItems[5][9] = ['Мастер-класс по стрельбе из лука', '...', 'цена договорная', '', '', '', '', '', 'red'];
+catItems[5][10] = ['Мастер-класс по рисункам на футболках', '...', 'от 700 р на ребенка', '1 час', '', '', '', '', 'red'];
+catItems[5][11] = ['Шоколадный мастер-класс', '...', 'от 700 р на ребенка', '1 час', '', '', '', '', 'red'];
+catItems[5][12] = ['Эбру', '...', 'от 700 р на ребенка', '1 час', '', '', '', '', ''];
+ItmCount=14;
+</Script>
+<Script>
+function changItem(bx, cx) {
+for (var i=1; i<cx; i++) {document.getElementById('e'+i).className='item1'}
+if (bx !== 0) {document.getElementById('e'+bx).className='item2';}
+}
+function changCont(dx, cx) {
+for (var i=1; i<cx; i++) {document.getElementById('cnt'+i).className='cont1'}
+if (dx !== 0) {
+	document.getElementById('cnt'+dx).className='cont2';
+	document.getElementById('cnt0').className='cont3';
+} else {
+	document.getElementById('cnt0').className='cont0';
+}
+}
+function showMe(ax) {
+changItem(ax, ItmCount+1);
+changCont(ax, ItmCount+1);
+}
+</Script>
+</HEAD>
+<BODY>
+<div class=globDiv>
+<div class=blockLeft id=Bll>
+	<div class=item1 id=e1 OnClick="showMe(1)"> </div>
+	<div class=item1 id=e2 OnClick="showMe(2)"> </div>
+	<div class=item1 id=e3 OnClick="showMe(3)"> </div>
+	<div class=item1 id=e4 OnClick="showMe(4)"> </div>
+	<div class=item1 id=e5 OnClick="showMe(5)"> </div>
+	<div class=item1 id=e6 OnClick="showMe(6)"> </div>
+	<div class=item1 id=e7 OnClick="showMe(7)"> </div>
+	<div class=item1 id=e8 OnClick="showMe(8)"> </div>
+	<div class=item1 id=e9 OnClick="showMe(9)"> </div>
+	<div class=item1 id=e10 OnClick="showMe(10)"> </div>
+	<div class=item1 id=e11 OnClick="showMe(11)"> </div>
+	<div class=item1 id=e12 OnClick="showMe(12)"> </div>
+	<div class=item1 id=e13 OnClick="showMe(13)"> </div>
+	<div class=item1 id=e14 OnClick="showMe(14)"> </div>
+</div>
+<div class=blockMiddle>&nbsp;</div>
+<div class=blockRight id=Blr>
+	<div class=cont0 id=cnt0><p>На каждую программу идет расчет работы одного аниматора, для программ требующих двух и более аниматора условия уточняйте у нашего менеджера…</p>
+	<p>Выбирите в левой панели интересующую вас группу</p></div>
+	<div class=cont1 id=cnt1><!-- 1-3 -->
+	<p><b>Примечание.</b> Расчет на 1 час, цена 3 500 р. Один аниматор. Работа с группами более чем десяти детей  оговаривается отдельно.</p>
+	<ul>
+	<li id=cat1itm1> </li>
+	<li id=cat1itm2> </li>
+	<li id=cat1itm3> </li>
+	<li id=cat1itm4> </li>
+	<li id=cat1itm5> </li>
+	<li id=cat1itm6> </li>
+	<li id=cat1itm7> </li>
+	</ul>
+	<hr width=75% color=brown>
+	<ul>
+	<li id=cat1itm8> </li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt2><!-- 4-7 -->
+	<ul>
+	<li id=cat2itm1> </li>
+	<li id=cat2itm2> </li>
+	<li id=cat2itm3> </li>
+	<li id=cat2itm4> </li>
+	<li id=cat2itm5> </li>
+	<li id=cat2itm6> </li>
+	<li id=cat2itm7> </li>
+	<li id=cat2itm8> </li>
+	<li id=cat2itm9> </li>
+	<li id=cat2itm10> </li>
+	<li id=cat2itm11> </li>
+	<li id=cat2itm12> </li>
+	<li id=cat2itm13> </li>
+	<li id=cat2itm14> </li>
+	<li id=cat2itm15> </li>
+	<li id=cat2itm16> </li>
+	<li id=cat2itm17> </li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt3><!-- 7-16 -->
+	<ul>
+	<li id=cat3itm1> </li>
+	<li id=cat3itm2> </li>
+	<li id=cat3itm3> </li>
+	<li id=cat3itm4> </li>
+	<li id=cat3itm5> </li>
+	<li id=cat3itm6> </li>
+	<li id=cat3itm7> </li>
+	<li id=cat3itm8> </li>
+	<li id=cat3itm9> </li>
+	<li id=cat3itm10> </li>
+	<li id=cat3itm11> </li>
+	<li id=cat3itm12> </li>
+	<li id=cat3itm13> </li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt4><!-- 4.	Шоу программы для детей -->
+	<ul>
+	<li id=cat4itm1> </li>
+	<li id=cat4itm2> </li>
+	<li id=cat4itm3> </li>
+	<li id=cat4itm4> </li>
+	<li id=cat4itm5> </li>
+	<li id=cat4itm6> </li>
+	<li id=cat4itm7> </li>
+	<li id=cat4itm8> </li>
+	<li id=cat4itm9> </li>
+	<li id=cat4itm10> </li>
+	<li id=cat4itm11> </li>
+	<li id=cat4itm12> </li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt5><!-- Мастер-классы -->
+	<p><b>Примечание.</b> Большая часть мастер-классов рассчитана на группы до 10 детей. Заявки на мастер-классы для групп менее 5 или более 10 детей рассматриваются индивидуально.</p>
+	<ul>
+	<li id=cat5itm1> </li>
+	<li id=cat5itm2> </li>
+	<li id=cat5itm3> </li>
+	<li id=cat5itm4> </li>
+	<li id=cat5itm5> </li>
+	<li id=cat5itm6> </li>
+	<li id=cat5itm7> </li>
+	<li id=cat5itm8> </li>
+	<li id=cat5itm9> </li>
+	<li id=cat5itm10> </li>
+	<li id=cat5itm11> </li>
+	<li id=cat5itm12> </li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt6><!-- Выпускные -->
+	<ul>
+	<li id=cat6itm1>Выпускной детский сад</li>
+	<li id=cat6itm2>Выпускной 4 класс</li>
+	<li id=cat6itm3>Выпускной 9 класс</li>
+	<li id=cat6itm4>Выпускной 11 класс</li>
+	<li id=cat6itm5>Окончание ВУЗа</li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt7><!-- Тематические программы с интерактивом -->
+	<p><b>Примечание.</b> Цены на тематические программы обсуждаются в индивидуальном порядке. Средняя цена за шоу + интерактив - от 15 тысяч за час работы двух 
+
+актеров.</p>
+	<ul>
+	<li id=cat7itm1>Шоу самураев</li>
+	<li id=cat7itm2>Чайная церемония</li>
+	<li id=cat7itm3>Средневековая Япония</li>
+	<li id=cat7itm4>Русь изначальная</li>
+	<li id=cat7itm5>Викинги и славяне</li>
+	<li id=cat7itm6>Шотландия - По следам Дункана Маклауда</li>
+	<li id=cat7itm7>Кельты и Римляне</li>
+	<li id=cat7itm8>Рыцарские забавы</li>
+	<li id=cat7itm9>Праздники средневековой Европы</li>
+	<li id=cat7itm10>Бал-маскарад (19 век)</li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt8><!-- Молодежка -->
+	<p><b>Примечание.</b> Обсуждается индивидуально, по желанию заказчика длительность варьируется.</p>
+	<ul>
+	<li id=cat8itm1>Проводы в армию – от 2 часов, цена договорная</li>
+	<li id=cat8itm2>Дембель – от 2 часов, цена договорная</li>
+	<li id=cat8itm3>Поступление в вуз – от 2 часов, цена договорная</li>
+	<li id=cat8itm4>Vip – программа – от 2 часов, цена договорная</li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt9><!-- Шоу-программы для взрослых -->
+	<ul>
+	<li id=cat9itm1>Крио шоу – 20-30 мин, цена от 10 000 р.</li>
+	<li id=cat9itm2>Неоновое шоу – 20-30 мин, цена от 8 000 р.</li>
+	<li id=cat9itm3>Мыльное шоу – 20-30 мин, цена от 6 000 р.</li>
+	<li id=cat9itm4>Тесла шоу – 20-30 мин, цена от 8 000 р.</li>
+	<li id=cat9itm5>Бумажная дискотека на свадьбу или корпоратив – 40 мин, от 20 000 р</li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt10><!-- Семейные торжества -->
+	<ul>
+	<li id=cat10itm1>Романтическое предложения</li>
+	<li id=cat10itm2>Сватовство</li>
+	<li id=cat10itm3>Помолвка</li>
+	<li id=cat10itm4>Венчание</li>
+	<li id=cat10itm5>Юбилей свадьбы</li>
+	<li id=cat10itm6>Юбилей (День рождения)</li>
+	<li id=cat10itm7>Именины (День Ангела)</li>
+	<li id=cat10itm8>Встреча из роддома</li>
+	<li id=cat10itm9>Крестины</li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt11><!-- Свадьбы -->
+	<ul>
+	<li>Свадьба «под ключ» - от 40 000 р.</li>
+	<li>Тематические свадьбы – от 50 000 р.</li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt12><!-- Корпоративы -->
+	<p><b>Примечание.</b> От часа работы, цена договорная.</p>
+	<ul>
+	<li>Корпоратив</li>
+	<li>Новогодний огонёк</li>
+	<li>Юбилей компании / филиала</li>
+	<li>День Рождения руководителя</li>
+	<li>День Рождения коллеги</li>
+	<li>Тимбилдинг</li>
+	<li>Творческий вечер</li>
+	<li>Фотосессия</li>
+	<li>Лазертаг</li>
+	<li>Презентация</li>
+	<li>Vip-программа</li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt13><!-- Праздники: государственные, народные -->
+	<ul>
+	<li>Праздники официальные</li>
+	<li>Праздники народные</li>
+	<li>Праздники религиозные</li>
+	</ul>
+	</div>
+	<div class=cont1 id=cnt14><!-- Доп.услуги -->
+	<ul>
+	<li>Видеоуслуги – 1 час, от 4 000 р.</li>
+	<li>Фотоуслуги – 1 час, от 4 000 р.</li>
+	<li>Украшения шарами – от 7 000 р.</li>
+	<li>Кейтеринг – цена договорная</li>
+	<li>Шоколадный фонтан – цена договорная</li>
+	<li>Шар – сюрприз, пиньята – от 3 000 р.</li>
+	<li>Печатная продукция – цена договорная</li>
+	<li>Аквагрим – 1 час, цена - 3 000 р.</li>
+	</ul>
+	<hr width=75% color=brown>
+	<ul>
+	<li>Памятные сувениры – цена договорная</li>
+	</ul>
+	</div>
+</div>
+<br style="clear: both" /><p class=c><img src=https://static.wixstatic.com/media/e8c495_67c8208c7c7f4a3a8e8a13736736c5bf~mv2.png/v1/fill/w_141,h_36,al_c/e8c495_67c8208c7c7f4a3a8e8a13736736c5bf~mv2.png border=0 alt="выбор эвентов" Onclick="top.location.href='http://www.cheharda.org/priselist'" style="cursor: pointer" /></p>
+</div>
+<Script>
+function fillMenu() {
+for (var i=1; i<ItmCount+1; i++) {document.getElementById('e'+i).innerHTML=menuItems[i-1];}
+}
+function drawItem(ax, bx) {
+pl='cat'+ax+'itm'+bx;
+itmCont1=itmCont2=itmCont3='';
+// allItems[0][0]=['ItemName 0', 'description 1', 'cost 2', 'time 3', 'link 4', 'itemName class 5', 'description class 6', 'cost and time class 7', 'link class 8'];
+if (catItems[ax][bx][5]=='') {itmCont1='<p class=defaultName>'+catItems[ax][bx][0]+'</p>';}
+else {itmCont1='<span class='+catItems[ax][bx][5]+'>'+catItems[ax][bx][0]+'</span>';}
+if (catItems[ax][bx][1]=='') { itmCont2=''; } // description
+else {
+	if (catItems[ax][bx][6]=='') {itmCont2='<br><p class=defaultDescr>'+catItems[ax][bx][1]+'</p>'}
+	else {itmCont2='<br><p class='+catItems[ax][bx][6]+'>'+catItems[ax][bx][1]+'</p>'}
+}
+if (catItems[ax][bx][2]=='') { itmCont3=''; } // cost
+else {
+	if (catItems[ax][bx][7]=='') {itmCont3='<p class=defaultCost>'+catItems[ax][bx][2]+'</p>'}
+	else {itmCont3='<p class='+catItems[ax][bx][7]+'>'+catItems[ax][bx][2]+'</p>'}
+}
+if (catItems[ax][bx][3]=='') { itmCont3=itmCont3; } // time
+else {
+	if (catItems[ax][bx][7]=='') {itmCont3=itmCont3+'<p class=defaultCost>'+catItems[ax][bx][3]+'</p>'}
+	else {itmCont3=itmCont3+'<p class='+catItems[ax][bx][7]+'>'+catItems[ax][bx][3]+'</p>'}
+}
+if (catItems[ax][bx][4]=='') { itmCont3=itmCont3; } // link
+else {
+	if (catItems[ax][bx][8]=='') {itmCont3=itmCont3+'<p class=defaultCost>'+catItems[ax][bx][4]+'</p>'}
+	else {itmCont3=itmCont3+'<p class='+catItems[ax][bx][8]+'>'+catItems[ax][bx][4]+'</p>'}
+}
+if ((itmCont3 == '') || (itmCont3 == ' ')) { itmCont3 = ''; }
+else {itmCont3='<br>'+itmCont3;}
+// *
+console.log('itmCont1: '+itmCont1);
+console.log('itmCont2: '+itmCont2);
+console.log('itmCont3: '+itmCont3);
+document.getElementById(pl).innerHTML=itmCont1+itmCont2+itmCont3;
+}
+</Script>
+<!-- //// -->
+<script>
+for (itmXm=1; itmXm<9; itmXm++) drawItem(1, itmXm);
+for (itmXm=1; itmXm<18; itmXm++) drawItem(2, itmXm);
+for (itmXm=1; itmXm<14; itmXm++) drawItem(3, itmXm);
+for (itmXm=1; itmXm<13; itmXm++) drawItem(4, itmXm);
+for (itmXm=1; itmXm<13; itmXm++) drawItem(5, itmXm);
+showMe(0);
+fillMenu();
+// newH = document.body.clientHeight - 75;
+// document.getElementById('Blr').style.height=newH+'px';
+document.getElementById('Blr').style.height=document.getElementById('Bll').clientHeight+'px';
+</script>
+<br />
+</BODY>
+</HTML>

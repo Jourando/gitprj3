@@ -1,5 +1,5 @@
 # VI[name]: BuildScenario
-# VI[ver]: 2.0
+# VI[ver]: 2.0.1
 # VI[app]: Mbuild
 # VI[comp]: 3
 - Compatible with Mbuild 3 +
