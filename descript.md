@@ -1,4 +1,4 @@
-NAME    |   PList      |        Flist   |  State    |     Lnk  |       Descript ||
+|| NAME    |   PList      |        Flist   |  State    |     Lnk  |       Descript ||
 
 xMind      xMind Market       -         not started   in Prj      -
 
